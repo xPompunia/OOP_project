@@ -112,3 +112,10 @@ TEST(setCopiesTest, setCopiesTestFailure) {
     EXPECT_FALSE(instance) << "Set book copies test (failure) failed";
 }
 ```
+
+## Building
+
+Open `OOP_project.sln` in Visual Studio (the required MySQL Connector/C++ DLLs
+are bundled next to the sources). Create the database by running `Database.cnf`
+against a local MySQL server, and set your MySQL credentials in the
+`LibraryDB::getInstance` defaults (`LibraryDB.h`).

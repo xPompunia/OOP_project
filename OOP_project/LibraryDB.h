@@ -35,8 +35,9 @@ public:
 	};
 
 	// Get the Singleton instance with default MySQL connection data
+	// (replace the credentials with your local MySQL setup)
 	static LibraryDB& getInstance(const std::string& username = "root",
-		const std::string& password = "Krzysiu13",
+		const std::string& password = "password",
 		const std::string& databaseName = "library",
 		const std::string& tableBooksName = "books",
 		const std::string& tableReadersName = "readers",
